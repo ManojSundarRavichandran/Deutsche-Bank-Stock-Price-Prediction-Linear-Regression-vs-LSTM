@@ -38,3 +38,48 @@ Date (temporal)
 Open, High, Low, Close, Adj Close, Volume
 
 Target Variable: Close price
+
+# 🔍 Exploratory Data Analysis 
+
+Descriptive statistics for numerical features
+
+Distribution visualization using boxplots
+
+Outlier detection using Interquartile Range (IQR)
+
+Finding: No significant outliers were detected in the closing price.
+
+# Feature Engineering 
+To incorporate temporal dependencies:
+
+Lag Features: Previous day closing prices
+
+Moving Average (window=5): Trend smoothing
+
+Train-test split preserving chronological order
+
+Feature scaling prior to model training
+
+# Model Implemented 
+
+## Linear Regression (Baseline)
+
+Fast convergence
+
+Works effectively with engineered static features
+
+Provides strong interpretability
+
+## LSTM (Recurrent Neural Network)
+Designed for sequential and temporal data
+
+Captures long-term dependencies and non-linear patterns
+
+# Result 
+Linear Regression outperformed LSTM on this dataset due to:
+
+Limited dataset size
+
+Noisy auxiliary features
+
+Strong engineered linear signals
