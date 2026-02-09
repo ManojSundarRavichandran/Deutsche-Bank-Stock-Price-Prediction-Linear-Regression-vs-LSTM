@@ -1,4 +1,4 @@
-=#  Linear Regression vs LSTM for Next-Day Closing Price Forecasting
+#  Linear Regression vs LSTM for Next-Day Closing Price Forecasting
 
 An end-to-end time-series forecasting pipeline that predicts the next-day closing price of Deutsche Bank stock using historical OHLCV data. The study benchmarks a classical regression baseline against a deep sequential model (LSTM) to analyze the impact of feature engineering versus temporal representation learning.
 # 📌 Problem Statement
