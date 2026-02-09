@@ -90,3 +90,5 @@ Limited dataset size
 Noisy auxiliary features
 
 Strong engineered linear signals
+
+Visual inspection of the prediction curves indicates that the Linear Regression model closely tracks the actual price trajectory, while the LSTM model generates smoother forecasts with delayed responses to trend reversals, which contributes to its inferior performance on this dataset.
