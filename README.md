@@ -1,15 +1,19 @@
-# Deutsche-Bank-Stock-Price-Prediction-Linear-Regression-vs-LSTM
-An end-to-end machine learning project that predicts the next-day closing price of Deutsche Bank stock using historical market data. The pipeline includes data preprocessing, feature engineering (lag features and moving averages), and model comparison between Linear Regression and LSTM to analyze performance and forecasting behavior
+=#  Linear Regression vs LSTM for Next-Day Closing Price Forecasting
+
+An end-to-end time-series forecasting pipeline that predicts the next-day closing price of Deutsche Bank stock using historical OHLCV data. The study benchmarks a classical regression baseline against a deep sequential model (LSTM) to analyze the impact of feature engineering versus temporal representation learning.
 # 📌 Problem Statement
 
-Financial time-series data are noisy, dynamic, and non-linear, making accurate stock price forecasting challenging.
-The objective of this project is to:
+Financial markets exhibit:
 
-Predict the next-day closing price of Deutsche Bank stock
+Non-stationarity
 
-Evaluate and compare the performance of Linear Regression and Long Short-Term Memory (LSTM) networks
+High noise
 
-Analyze how feature engineering and temporal modeling influence forecasting accuracy
+Temporal dependencies
+
+Regime shifts
+
+This project investigates whether explicitly engineered temporal features (lag & moving averages) with Linear Regression can outperform end-to-end sequence learning via LSTM when data is limited.
 
 # 🎯 Objectives
 
@@ -48,6 +52,9 @@ Distribution visualization using boxplots
 Outlier detection using Interquartile Range (IQR)
 
 Finding: No significant outliers were detected in the closing price.
+
+# Observation:
+No statistically significant outliers in Close price → suitable for regression modeling without aggressive winsorization.
 
 # Feature Engineering 
 To incorporate temporal dependencies:
